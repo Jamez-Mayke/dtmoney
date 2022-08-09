@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 
 export const Container = styled.form`
@@ -64,6 +65,12 @@ export const TransactionTypeContainer = styled.div`
         align-items: center;
         justify-content: center;
 
+        transition: border-color 200ms;
+        
+        &:hover {
+            border-color: ${darken(0.1, "#d7d7d7")};
+        }
+
         img {
             width: 20px;
             height: 20px;
@@ -74,30 +81,6 @@ export const TransactionTypeContainer = styled.div`
             margin-left: 1rem;
             font-size: 1rem;
             color: var(--text-title);
-        }
-
-        &.typeIncome:hover {
-            background-color: var(--green);
-            
-            img {
-                background-color: #fff;
-                border-radius: 50%;
-            }
-            span {
-                color: #fff;
-            }
-        }
-
-        &.typeOutcome:hover {
-            background-color: var(--red);
-            
-            img {
-                background-color: #fff;
-                border-radius: 50%;
-            }
-            span {
-                color: #fff;
-            }
         }
     }
 `;
