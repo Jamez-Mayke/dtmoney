@@ -40,7 +40,6 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                 <TransactionTypeContainer>
                     <button
                         type="button"
-                        className='typeIncome'
                     >
                         <img src={incomeImg} alt="Entrada" />
                         <span>
@@ -50,7 +49,6 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
 
                     <button
                         type="button"
-                        className='typeOutcome'
                     >
                         <img src={outcomeImg} alt="Saída" />
                         <span>
