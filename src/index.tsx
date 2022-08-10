@@ -12,6 +12,35 @@ createServer({
   models: {
     transaction: Model
   },
+  seeds(server) {
+    server.db.loadData({
+      transactions: [
+        {
+          id: 1,
+          title: 'Criação de landing page',
+          amount: 3400,
+          type: 'deposit',
+          category: 'dev',
+          createdAt: new Date('2022-08-11 09:15:00').toLocaleString('pt-BR', {
+            day: '2-digit',
+            month: '2-digit',
+            year: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+          }),
+        },
+        {
+          id: 2,
+          title: 'Compras',
+          amount: 640,
+          type: 'withdraw',
+          category: 'casa',
+          createdAt: new Date('2022-08-12 08:00:00'),
+        }
+      ]
+    })
+  },
   routes() {
     this.namespace = "api";
 
