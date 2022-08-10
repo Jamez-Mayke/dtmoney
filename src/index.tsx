@@ -21,14 +21,7 @@ createServer({
           amount: 3400,
           type: 'deposit',
           category: 'dev',
-          createdAt: new Date('2022-08-11 09:15:00').toLocaleString('pt-BR', {
-            day: '2-digit',
-            month: '2-digit',
-            year: '2-digit',
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit'
-          }),
+          createdAt: new Date('2022-08-11 09:15:00'),
         },
         {
           id: 2,
@@ -36,7 +29,7 @@ createServer({
           amount: 640,
           type: 'withdraw',
           category: 'casa',
-          createdAt: new Date('2022-08-12 08:00:00'),
+          createdAt: new Date('2022-08-10 08:00:00'),
         }
       ]
     })
