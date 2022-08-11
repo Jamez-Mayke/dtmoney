@@ -14,24 +14,7 @@ createServer({
   },
   seeds(server) {
     server.db.loadData({
-      transactions: [
-        {
-          id: 1,
-          title: 'Criação de landing page',
-          amount: 3400,
-          type: 'deposit',
-          category: 'dev',
-          createdAt: new Date('2022-08-11 09:15:00'),
-        },
-        {
-          id: 2,
-          title: 'Compras',
-          amount: 640,
-          type: 'withdraw',
-          category: 'casa',
-          createdAt: new Date('2022-08-10 08:00:00'),
-        }
-      ]
+      transactions: []
     })
   },
   routes() {
