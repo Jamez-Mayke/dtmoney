@@ -25,6 +25,6 @@ Após uma série de estudos e muita tentativa, o resultado até o momento é est
 ## Executando o projeto
 1. Faça o clone do repositório para a sua máquina local
 2. Abra o projeto no visual studio code
-3. instalar dependências do projeto com o comando ```yarn``` ou ```yarn install````
+3. instalar dependências do projeto com o comando ```yarn``` ou ```yarn install```
 4. rodar o comando no terminal: ```yarn dev```
 5. aproveite o projeto para estudos. :)
